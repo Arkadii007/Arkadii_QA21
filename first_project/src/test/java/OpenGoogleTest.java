@@ -28,11 +28,13 @@ public class OpenGoogleTest extends TestBase
     @Test
     public void searchJavaTest() throws IllegalAccessException, InterruptedException {
         driver.get("https://www.google.com");
-            driver.findElement(By.name("q")).click();
-            driver.findElement(By.name("q")).sendKeys("java");
-            driver.findElement(By.name("q")).sendKeys("java"+ Keys.ENTER);
+           type(By.name("q"), "говорите по русски"+ Keys.ENTER);
+
             Thread.sleep(7000);
         }
 
+////@Test
+   //// public void clicklmFillingLucky(){
 
 }
+
